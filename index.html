@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Document</title>
+
 </head>
+
 <body>
 
     <h1>Meu Primeiro Site</h1>
     <p>Estou aprendendo <strong>HTML</strong></p>
 
+    <hr>
+
     <h2>O que estou aprendendo</h2>
+    
     <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
     </ul>
+    
     <ol>
         <dl>
             <li>
@@ -32,59 +40,49 @@
         </dl>
     </ol>
 
+    <hr>
+
     <a href="https://www.google.com">Ir para o google</a>
+    <br>
+    <a href="formulario.html">Ir para o meu formulario</a>
+    <a href="teste.html">teste</a>
 
-    <a >Cadastrar um aluno</a>
+    <hr>
 
-    <h1>Cadastro de Aluno</h1>
-    <form action="#" method="POST">
-        <fieldset>
-            <legend>Dados pessoais</legend>
+    <figure>
+        <a href="https://pudim.com.br/">
+            <img src="pudim.jpg"
+                alt="Imagem de um pudim"
+                width="400"
+                height="300">
+        </a>
+        <figcaption>Figura 1: Imagem de alta qualidade de um pudim</figcaption>
+    </figure>
 
-            <label for="nome">Nome completo:</label>
-            <input type="text" name="nome" id="nome" placeholder="João da Silva" required>
+    <hr>
 
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" placeholder="joao@gmail.com" required>
+    <table>
+        <thead>                   
+            <tr>                    
+                <th>Nome</th>         
+                <th>Nota</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>                  
+            <tr>
+                <td>João</td>        
+                <td>8.5</td>
+                <td>Aprovado</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>9.2</td>
+                <td>Aprovado</td>
+            </tr>
+        </tbody>
+    </table>
 
-            <label for="nascimento">Data de nascimento:</label>
-            <input type="date" name="nascimento" id="nascimento" required>
-
-            <label>Telefone:</label>
-            <input type="tel" name="telefone" id="telefone" placeholder="(34) 99999-9999" required>
-        </fieldset>
-        <fieldset>
-            <legend>Dados Acadêmicos</legend>
-
-            <label>Curso:</label>
-            <select name="curso" id="curso" required>
-                <option value="">Selecione o Curso...</option>
-                <option value="ec">Eng. de Computação</option>
-                <option value="si">Sistemas de Informação</option>
-                <option value="cc">Ciência da Computação</option>
-            </select>
-
-            <label>Período:</label>
-            <input type="number" name="periodo" id="periodo" placeholder="1" required>
-
-            <label>Turno:</label>
-            <label>Manhã
-                <input type="radio" name="turno" id="turno" value="manha" checked>
-            </label>
-            <label>Noite
-                <input type="radio" name="turno" id="turno" value="noite">
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Obervações</legend>
-            <label>Aceito os termos de uso</label>
-            <input type="checkbox" name="termos" id="termos" required>
-
-            <label>Comentários:</label>
-            <textarea   rows="4" name="obs" id="obs" placeholder="Algo que deseja informar?"></textarea>
-        </fieldset>
-        <button type="submit">Cadastrar</button>
-        <button type="reset">Limpar</button>
-    </form>
 </body>
+
 </html> 

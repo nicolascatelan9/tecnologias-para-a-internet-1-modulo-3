@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site Semântico</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; }
+    header { background: #1A73E8; color: white; padding: 20px; }
+    nav { background: #333; padding: 10px; }
+    nav a { color: white; margin: 0 15px;
+            text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 900px; margin: 20px auto;
+           display: flex; gap: 20px; }
+    section { flex: 3; }
+    aside { flex: 1; background: #f0f0f0;
+            padding: 15px; border-radius: 8px; }
+    article { border: 1px solid #ddd; padding: 15px;
+             margin-bottom: 15px; border-radius: 8px; }
+    footer { background: #333; color: white;
+            text-align: center; padding: 15px;
+            margin-top: 30px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portal de Notícias Tech</h1>
+    <p>Seu site de tecnologia favorito</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#noticias">Notícias</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="noticias">
+      <h2>Notícias Recentes</h2>
+
+      <article>
+        <h3>React 20 é lançado!</h3>
+        <p><small>26/03/2026 | Tecnologia</small></p>
+        <p>A Meta anunciou hoje a nova versão...</p>
+      </article>
+
+      <article>
+        <h3>IA no Desenvolvimento Web</h3>
+        <p><small>25/03/2026 | IA</small></p>
+        <p>Como a inteligência artificial está...</p>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Links Úteis</h3>
+      <ul>
+        <li><a href="#">MDN Web Docs</a></li>
+        <li><a href="#">W3Schools</a></li>
+        <li><a href="#">Stack Overflow</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Portal Tech. Todos os direitos.</p>
+  </footer>
+
+</body>
+</html>

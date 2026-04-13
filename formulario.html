@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <h1>Cadastro de Aluno</h1>
+
+    <form action="#" method="POST">
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" name="nome" id="nome" placeholder="João da Silva" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="joao@gmail.com" required>
+
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" name="nascimento" id="nascimento" required>
+
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="(34) 99999-9999" required>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+
+            <label>Curso:</label>
+            <select name="curso" id="curso" required>
+                <option value="">Selecione o Curso...</option>
+                <option value="ec">Eng. de Computação</option>
+                <option value="si">Sistemas de Informação</option>
+                <option value="cc">Ciência da Computação</option>
+            </select>
+
+            <label>Período:</label>
+            <input type="number" name="periodo" id="periodo" placeholder="1" required>
+
+            <label>Turno:</label>
+            <label>Manhã
+                <input type="radio" name="turno" id="turno" value="manha" checked>
+            </label>
+
+            <label>Noite
+                <input type="radio" name="turno" id="turno" value="noite">
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Obervações</legend>
+
+            <label>Aceito os termos de uso</label>
+            <input type="checkbox" name="termos" id="termos" required>
+
+            <label>Comentários:</label>
+            <textarea   rows="4" name="obs" id="obs" placeholder="Algo que deseja informar?"></textarea>
+
+        </fieldset>
+
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+
+</body>
+
+</html>
